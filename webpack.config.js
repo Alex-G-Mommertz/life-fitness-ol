@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'static/js/g360_bundle_v1.0.0.js'
+    filename: 'static/js/sim_v1.0.0.js'
   },
   module: {
 
@@ -72,7 +72,7 @@ module.exports = {
   plugins: [
 
     new MiniCssExtractPlugin({
-      filename: 'static/css/g360_bundle_v1.0.0.css'
+      filename: 'static/css/sim_v1.0.0.css'
     }),
 
   ]

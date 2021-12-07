@@ -4,6 +4,8 @@ import {
 
 //import axios from 'axios';
 
+import Animate from 'animate.js';
+
 export default class Controller {
 
   constructor() {
@@ -47,3 +49,27 @@ export default class Controller {
   }
 
 }
+
+function initAnimateJs() {
+
+  var animate = new Animate({
+    target: '[data-animate]',
+    animatedClass: 'js-animated',
+    offset: [0.75, 0.25],
+    delay: 0,
+    remove: true,
+    scrolled: true,
+    reverse: false,
+    onLoad: true,
+    onScroll: true,
+    onResize: false,
+    disableFilter: false,
+    callbackOnInit: function () {},
+    callbackOnInView: function (el) {},
+    callbackOnAnimate: function (el) {},
+  });
+  animate.init();
+
+}
+
+initAnimateJs();

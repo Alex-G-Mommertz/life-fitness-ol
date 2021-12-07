@@ -61,7 +61,7 @@ $fullhd-enabled: true; // fullHD support
 
 // Update Bulma's global variables
 $family-sans-serif: "IBM Plex Sans", sans-serif;
-$primary: #E3022E;
+$primary: #dcdad3;
 $primary-dark: darken($primary, 10%); 
 // https://falkus.co/2017/05/using-lighten-and-darken-in-sass/
 $primary-hover: darken($primary, 2%);
@@ -112,7 +112,7 @@ $navbar-dropdown-arrow: $navbar-item-color;
 
 // Card
 $card-background-color:$white; 
-$card-header-background-color:$primary;
+$card-header-background-color:$white;
 $card-header-color: $scheme-main;
 $card-header-padding: 0.75rem 1rem;
 $card-shadow: 0 0.5em 1em -0.125em rgba($dark, 0.1), 0 0px 0 1px rgba($dark, 0.02);

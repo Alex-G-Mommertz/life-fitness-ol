@@ -1,4 +1,74 @@
-.red-alert {
-  font-size:2em;
-  color:red;
+.blue-to-violett {
+  background: rgb(9, 69, 96);
+  background: linear-gradient(270deg, rgba(9, 69, 96, 1) 0%, rgba(122, 65, 104, 1) 100%);
+}
+
+.logo-teaser {
+  max-width: 200px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+
+.card {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.card .club img {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.is-special {
+  background: rgb(9, 69, 96);
+  background: linear-gradient(90deg, rgba(9, 69, 96, 1) 0%, rgba(122, 65, 104, 1) 100%);
+  color: #fff;
+  border-radius: 50px;
+  width: 100%;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+
+.is-special:hover {
+  background-position: right center;
+  color: #fff;
+  /* change the direction of the change here */
+}
+
+.hero {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.is-animated {
+  visibility: hidden;
+}
+
+.is-animated.has-text-centered {
+  justify-content: center;
+}
+
+.animated,
+.js-animated {
+  visibility: visible !important;
+}
+
+
+
+@media (max-width: 1200px) {
+  .hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+  }
+
 }
